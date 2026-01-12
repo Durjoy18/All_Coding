@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double n,r,t,interest;
+
+    do
+    {
+        cin>>n>>r>>t;
+
+        if ( n<=0 || r<0 || t<0)
+        {
+            continue;
+        }
+        r= r/100;
+        interest = n * (pow(1+r,t)) - n;
+
+         cout<<interest;
+    } while (1);
+
+    return 0;
+}
