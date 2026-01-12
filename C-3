@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    int maximum, minimum;
+    maximum=minimum=a;
+    if(b>maximum)  maximum=b;
+    if(c>maximum)  maximum=c;
+
+    if( b<minimum) minimum=b;
+    if(c<minimum) minimum=c;
+
+    cout<<"Maximum:"<<""<<maximum;
+    cout<<"Minimum:"<<""<<minimum;
+
+    return 0;
+}
