@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,rnum=0,onum;
+    cin>>n;
+    onum=n;
+    while(n!=0)
+    {
+        int reminder= n%10;2
+        rnum=rnum*10+reminder;
+        n=n/10;
+    }
+    if(onum==rnum)
+
+       {
+        cout<<"Palindrome";
+       }
+    else{
+        cout<<"Not Palindrome";
+    }
+    return 0;
+}
